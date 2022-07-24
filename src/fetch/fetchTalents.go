@@ -37,8 +37,8 @@ func main() {
 	page := 0
 	for {
 		nbInserted := insertTalentsFromPage(page)
-		page++
 		fmt.Printf("Add %d from page %d\n", nbInserted, page)
+		page++
 		if nbInserted < 20 {
 			break
 		}

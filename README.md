@@ -9,14 +9,18 @@ Some comments:
 - I learnt Go for this test, it was very interesting but also challenging
 
 ## Run Fetch all talents from existing API
+```shell
 cd <PROJECT_DIRECTORY>
 echo "DB_URI=<DB_URI>" > src/fetch/.env
 cd src/fetch/ && go run fetchTalents.go
+```
 
 ## Run API
+```shell
 cd <PROJECT_DIRECTORY>
 echo "DB_URI=<DB_URI>" > src/fetch/.env
 docker build . -t crew-api && ./runLocal.sh
+```
 
 ## TODO
 - CI

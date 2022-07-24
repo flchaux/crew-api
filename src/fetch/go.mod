@@ -1,6 +1,7 @@
-module api
+module main
 
 require model v1.0.0
+
 require dal v1.0.0
 
 require (
@@ -20,6 +21,7 @@ require (
 )
 
 replace model v1.0.0 => ../model
+
 replace dal v1.0.0 => ../dal
 
 go 1.18

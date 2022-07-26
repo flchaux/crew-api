@@ -18,7 +18,7 @@ cd src/fetch/ && go run fetchTalents.go
 ## Run API
 ```shell
 cd <PROJECT_DIRECTORY>
-echo "DB_URI=<DB_URI>" > src/fetch/.env
+echo "DB_URI=<DB_URI>" > src/api/.env
 docker build . -t crew-api && ./runLocal.sh
 ```
 
